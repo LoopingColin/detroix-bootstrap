@@ -1,0 +1,228 @@
+:root {
+    --prim: #131c29;
+    --sec: #ff8901;
+    --text: #596573;
+    --bgColor: #f4f4f6;
+    --buttonColor: #213349;
+    --headerFont: 'Oswald', sans-serif;
+    --textFont: 'Open Sans Condensed', sans-serif;
+}
+
+
+/* generic */
+
+.text, .list-text {
+    /* border: 1px solid red; */
+    font-family: var(--textFont);
+    color: var(--text)
+}
+
+p, li {
+    /* border: 1px solid blue; */
+    font-family: var(--textFont);
+}
+
+.main-header a {
+    font-family: var(--headerFont);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (min-width:360px) {
+    .main-header a {
+        /* border: 1px solid red; */
+        font-size: 3px;
+    }
+}
+
+@media (max-width:768px) {
+    .main-header a {
+        /* border: 1px solid blue; */
+        font-size: 8px;
+    }
+}
+
+/* end generic */
+
+/* header */
+
+.top-link  {
+    /* border: 1px solid red; */
+    color:var(--text)
+}
+
+.top-header {
+    /* border: 1px solid red; */
+    background-color: var(--prim);
+}
+
+.top-nav-item a {
+    color: var(--text); 
+}
+
+.main-nav-item {
+    /* border: 1px solid red; */
+    background-color: var(--buttonColor);
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 3px 0;
+    font-family: var(--headerFont);
+}
+
+
+.main-nav-item:hover {
+    background-color:var(--sec);
+}
+
+.main-nav-item a {
+    /* border: 1px solid red; */
+    color: var(--bgColor);
+}
+
+/* end header */
+
+/* main */
+
+.sub-header {
+    /* border: 1px solid red; */
+    font-family: var(--headerFont);
+    text-transform: uppercase;
+    font-size: calc(25px + (22 - 11) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.content .sub-header {
+    color: var(--prim);
+    font-family: var(--headerFont);
+    text-transform: uppercase;
+}
+
+@media (max-width:768px) {
+    .content-img   {
+        width: 100%;
+    }
+}
+
+.button {
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: var(--bgColor);
+    background-color: var(--buttonColor);
+}
+
+/* end main */
+
+/* footer */
+
+
+.footer {
+    /* border: 1px solid red; */
+    background: radial-gradient(
+        at top right,
+        #33597e, #0e1620
+    );
+}
+
+.footer .sub-header {
+    /* border: 1px solid red; */
+    color: var(--bgColor);
+    font-family: var(--textFont);
+}
+
+.service-list {
+    /* border: 1px solid red; */
+    padding-left: 15px;
+    list-style-image: url('../media/cog.png');
+}
+
+.service-list-item {
+    /* border: 1px solid red; */
+    font-family: var(--textFont);
+    font-size: calc(11px + (22 - 11) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 2.2;
+}
+
+.service-list-item a {
+    /* border: 1px solid red; */
+    color: var(--bgColor);
+}
+
+.opportunities-list {
+    /* border: 1px solid red; */
+    padding-left: 15px;
+    list-style-image: url('../media/chat.png');
+}
+
+.opp-list-item a {
+    /* border: 1px solid red; */
+    color:var(--bgColor);
+}
+
+.news-list {
+    /* border: 1px solid red;    */
+    padding-left: 5px;  
+}
+
+.news-list-item {
+    /* border: 1px solid red; */
+    display: flex;
+    /* margin-top: 20px; */
+}
+
+
+.date, .month {
+    /* border: 1px solid red; */
+    margin: 0;
+    color: var(--bgColor);
+    font-family: var(--headerFont);
+    text-transform: uppercase;
+}
+
+.date, .month {
+    /* border: 1px solid red; */
+    font-size: calc(11px + (22 - 11) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.date-1 {
+    /* border: 1px solid red; */
+    background-color: #be8442 ;
+    padding: 15px;
+    border-radius: 5px;
+    /* margin-left: 20px; */
+}
+
+.date-div {
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+.date-2 {
+    background-color: #bc6142;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.date-3 {
+    background-color: #bd425e;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.news-list-item a {
+    /* border: 1px solid red; */
+    color: var(--bgColor);
+}
+
+.colophon {
+    background-color: var(--prim);
+    padding: 20px;
+}
+
+/* close footer */
+
+
+
